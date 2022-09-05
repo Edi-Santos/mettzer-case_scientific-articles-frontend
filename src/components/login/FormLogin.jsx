@@ -39,6 +39,8 @@ function FormLogin() {
       return alert('A senha deve conter, no mínimo, 6 dígitos!!!');
     }
 
+    localStorage.setItem('user', email);
+
     return navigate('/home');
   };
 

@@ -5,10 +5,12 @@ import MyContext from './MyContext';
 
 function Provider({ children }) {
   const [articles, setArticles] = useState([]);
+  const apiKey = 'rduKwJUohjEXZm2OtckL3VvQ8PN5DpFz';
 
   const contextValue = useMemo(() => ({
     articles,
     setArticles,
+    apiKey,
   }), [articles]);
 
   return (

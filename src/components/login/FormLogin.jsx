@@ -6,6 +6,8 @@ import ButtonRegister from './ButtonRegister';
 import InputEmail from './InputEmail';
 import InputPassword from './InputPassword';
 
+import './formLogin.css';
+
 function FormLogin() {
   const [inputs, setInputs] = useState({
     email: '',

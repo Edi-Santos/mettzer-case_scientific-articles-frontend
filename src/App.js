@@ -4,6 +4,7 @@ import Register from './pages/register/Register';
 import Home from './pages/home/Home';
 
 import './App.css';
+import './cssVars.css';
 
 function App() {
   return (

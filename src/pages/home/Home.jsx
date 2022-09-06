@@ -31,10 +31,16 @@ function Home() {
 
   const handleClickPageUp = () => setPage(page + 1);
 
+  const handleClickPageDown = () => {
+    if (page > 1) {
+      setPage(page - 1);
+    }
+  };
+
   return (
     <>
       <Header />
-      <Main pageUp={ handleClickPageUp } />
+      <Main pageUp={ handleClickPageUp } pageDown={ handleClickPageDown } />
     </>
   );
 }

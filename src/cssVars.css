@@ -1,0 +1,10 @@
+:root {
+
+  /* body */
+
+  --bg-color-body: rgb(246, 221, 180);
+
+  /* form */
+
+  --title-color-form: rgba(0, 0, 0, 0.7);
+}

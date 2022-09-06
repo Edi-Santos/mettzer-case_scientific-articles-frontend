@@ -1,0 +1,6 @@
+body {
+  align-items: center;
+  background-color: var(--bg-color-body);
+  display: flex;
+  justify-content: center;
+}

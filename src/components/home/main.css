@@ -1,12 +1,13 @@
 /* TAGs */
-main {
+
+/* Classes */
+.main-home {
   align-items: center;
   display: flex;
   flex-direction: column;
   width: 80%;
 }
 
-/* Classes */
 .title-main {
   color: var(--title-color-form);
   margin: 0 0 10px;

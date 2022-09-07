@@ -19,3 +19,8 @@ main {
   margin: 0 0 10px;
   width: 40%;
 }
+
+/* Kinship */
+.btn-article-container button {
+  background-color: var(--bg-color-body);
+}

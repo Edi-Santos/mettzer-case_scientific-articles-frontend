@@ -13,7 +13,7 @@ function Main({ pageUp, pageDown }) {
 
   return (
     <main>
-      <h2>ARTIGOS</h2>
+      <h2 className="title-main">ARTIGOS</h2>
 
       <section className="btn-article-container">
         <button type="button" onClick={ pageDown }>Anterior</button>

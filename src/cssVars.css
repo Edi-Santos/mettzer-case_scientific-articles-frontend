@@ -4,6 +4,10 @@
 
   --bg-color-body: rgb(246, 221, 180);
 
+  /* header */
+
+  --bg-color-btn-header: rgb(201, 49, 49);
+
   /* form */
 
   --bg-color-form: rgb(237, 224, 201);

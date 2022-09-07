@@ -6,6 +6,8 @@ import Main from '../../components/home/Main';
 import request from '../../services/request';
 import MyContext from '../../contextAPI/MyContext';
 
+import './home.css';
+
 function Home() {
   const [page, setPage] = useState(1);
   const { setArticles, apiKey } = useContext(MyContext);
@@ -38,10 +40,10 @@ function Home() {
   };
 
   return (
-    <>
+    <section className="home-container">
       <Header />
       <Main pageUp={ handleClickPageUp } pageDown={ handleClickPageDown } />
-    </>
+    </section>
   );
 }
 

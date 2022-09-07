@@ -1,5 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 
+import './header.css';
+
 function Header() {
   const userData = localStorage.getItem('user');
   const navigate = useNavigate();

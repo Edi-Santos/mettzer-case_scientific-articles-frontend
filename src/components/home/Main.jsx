@@ -5,6 +5,8 @@ import ArticleCard from './ArticleCard';
 
 import MyContext from '../../contextAPI/MyContext';
 
+import './main.css';
+
 function Main({ pageUp, pageDown }) {
   const { articles } = useContext(MyContext);
   const { data } = articles;

@@ -1,0 +1,32 @@
+/* TAGs */
+header {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 2% 0;
+  width: 100vw;
+}
+
+/* Classes */
+.data-user-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+/* Kinship */
+header h3 {
+  color: var(--title-color-form);
+}
+
+.data-user-container button {
+  background-color: var(--bg-color-body);
+  box-shadow: none;
+  font-size: 18px;
+  margin: 0 0 0 10px;
+}
+
+.data-user-container button:hover {
+  background-color: var(--bg-color-btn-header);
+}

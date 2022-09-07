@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 function InputPassword({ password, onChange }) {
   return (
     <label htmlFor="password">
-      Senha:
+      <p>Senha:</p>
       <input
         type="password"
         id="password"

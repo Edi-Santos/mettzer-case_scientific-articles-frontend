@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 function InputEmail({ email, onChange }) {
   return (
     <label htmlFor="email">
-      Email:
+      <p>Email:</p>
       <input
         type="text"
         id="email"

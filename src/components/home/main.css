@@ -12,3 +12,10 @@ main {
   margin: 0 0 10px;
   text-shadow: 1px 1px 1px rgb(251, 251, 251);
 }
+
+.btn-article-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 0 10px;
+  width: 40%;
+}

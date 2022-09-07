@@ -12,7 +12,7 @@ function Header() {
     <header>
       <img src="" alt="espaço para logo" />
 
-      <section>
+      <section className="data-user-container">
         <h3>{ `Olá, ${userData} !!!` }</h3>
 
         <button type="button" onClick={ handleClick }>

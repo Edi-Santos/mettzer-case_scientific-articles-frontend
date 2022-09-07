@@ -14,8 +14,12 @@ function Main({ pageUp, pageDown }) {
   return (
     <main>
       <h2>ARTIGOS</h2>
-      <button type="button" onClick={ pageDown }>Anterior</button>
-      <button type="button" onClick={ pageUp }>Próxima</button>
+
+      <section className="btn-article-container">
+        <button type="button" onClick={ pageDown }>Anterior</button>
+        <button type="button" onClick={ pageUp }>Próxima</button>
+      </section>
+
       <ArticleCard articles={ data } />
     </main>
   );

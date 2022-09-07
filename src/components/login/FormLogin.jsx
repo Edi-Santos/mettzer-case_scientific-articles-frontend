@@ -50,8 +50,10 @@ function FormLogin() {
     <form>
       <h1>Login</h1>
 
-      <InputEmail email={ email } onChange={ handleChange } />
-      <InputPassword password={ password } onChange={ handleChange } />
+      <section className="input-container">
+        <InputEmail email={ email } onChange={ handleChange } />
+        <InputPassword password={ password } onChange={ handleChange } />
+      </section>
 
       <section>
         <ButtonLogin onClick={ handleClick } />

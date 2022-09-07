@@ -12,7 +12,7 @@ function Main({ pageUp, pageDown }) {
   const { data } = articles;
 
   return (
-    <main>
+    <main className="main-home">
       <h2 className="title-main">ARTIGOS</h2>
 
       <section className="btn-article-container">

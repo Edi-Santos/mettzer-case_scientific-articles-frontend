@@ -30,11 +30,36 @@ input {
   padding: 0 10px;
 }
 
+button {
+  background-color: var(--bg-color-form);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 1px 1px 1px var(--title-color-form);
+  font-size: 22px;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: rgb(226, 204, 162);
+  color: whitesmoke;
+  cursor: pointer;
+  text-shadow: 1px 1px 1px var(--title-color-form);
+  transition: 0.5s;
+}
+
 /* Classes */
 .input-container {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10px 0;
   width: 100%;
 }

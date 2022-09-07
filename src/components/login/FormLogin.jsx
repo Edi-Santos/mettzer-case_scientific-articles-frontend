@@ -55,7 +55,7 @@ function FormLogin() {
         <InputPassword password={ password } onChange={ handleChange } />
       </section>
 
-      <section>
+      <section className="button-container">
         <ButtonLogin onClick={ handleClick } />
         <ButtonRegister onClick={ () => navigate('/register') } />
       </section>

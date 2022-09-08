@@ -12,6 +12,6 @@
 /* Kinships */
 .card-container h2 {
   color: var(--title-color-form);
-  margin: 0 0 20px;
+  margin: 20px 0 10px;
   text-decoration: underline;
 }

@@ -11,7 +11,7 @@ function ArticleCard({ articles }) {
       const eachURL = urls.map((url) => url);
 
       return (
-        <div key={ index }>
+        <div className="card-container" key={ index }>
           <h2>{ title }</h2>
           <h3>{ description }</h3>
           <h4>{ `Authors: ${eachAuthor}` }</h4>

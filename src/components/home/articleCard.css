@@ -20,3 +20,11 @@
   font-weight: 500;
   margin: 0 0 10px;
 }
+
+.card-container h4 span {
+  text-decoration: underline;
+}
+
+.card-container h4 {
+  width: 100%;
+}

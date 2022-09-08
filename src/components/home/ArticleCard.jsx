@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 
+import './articleCard.css';
+
 function ArticleCard({ articles }) {
   if (articles !== undefined) {
     return articles.map((article, index) => {

@@ -17,8 +17,8 @@ function ArticleCard({ articles }) {
           <h2>{ title }</h2>
           <h3>{ description }</h3>
           <h4>
-            <span>Authors: </span>
-            { eachAuthor }
+            <span>Authors:</span>
+            { ` ${eachAuthor}` }
           </h4>
           <a href={ eachURL }>link to article</a>
           <p>{ `Type: ${_type}` }</p>

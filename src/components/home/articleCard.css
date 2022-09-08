@@ -28,3 +28,14 @@
 .card-container h4 {
   width: 100%;
 }
+
+.card-container a {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+.card-container a:hover {
+  text-decoration: underline;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  transition: 1s;
+}

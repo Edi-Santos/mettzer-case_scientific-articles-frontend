@@ -16,8 +16,8 @@ function Main({ pageUp, pageDown }) {
       <h2 className="title-main">ARTIGOS</h2>
 
       <section className="btn-article-container">
-        <button type="button" onClick={ pageDown }>Anterior</button>
-        <button type="button" onClick={ pageUp }>Próxima</button>
+        <button id="previous" type="button" onClick={ pageDown }>Anterior</button>
+        <button id="next" type="button" onClick={ pageUp }>Próxima</button>
       </section>
 
       <ArticleCard articles={ data } />

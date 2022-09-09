@@ -7,6 +7,7 @@ const TITLE_H1 = 'h1';
 const SECTION = 'section';
 const LABEL = 'label';
 const INPUT = `${SECTION}.input-container label input`;
+const BUTTON = `${SECTION}.button-container button`;
 
 describe('Testando Tela de Login', () => {
   before(() => {
@@ -41,5 +42,10 @@ describe('Testando Tela de Login', () => {
 
   it('6 - testa se no <form /> há uma <section /> com a classe: .button-container', () => {
     cy.get(`${SECTION}.button-container`).should('exist');
+  });
+
+  it('7 - testa se a <section.buuton-container /> possui um button com o texto "Entrar" e outro com o texto "Cadastrar"', () => {
+    cy.get(`${BUTTON}#login-button`).should('have.text', 'Entrar');
+    cy.get(`${BUTTON}#register-button`).should('have.text', 'Cadastrar');
   });
 });

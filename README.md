@@ -103,6 +103,20 @@ Após a inicialização do Cypress abrirá as seguinte tela:
 Escolha a opção `E2E Testing`, pois é esta que está configurada e com testes feitos. <br>
 Em seguida, abrirá a seguinte tela:
 
+><img src='./img_readme/cypress_tela-escolha_execucao.png'> <br>
+
+Escolha alguma das 3 opções. A que você escolher será onde abrirá os testes do _Cypress_.
+Após selecionar a opção e clicar em `Start E2E Testing in ...`, abrirá a seguinte tela:
+
+><img src='./img_readme/cypress_tela-testes.png'> <br>
+
+>__Obs__: Estarei utilizando a opção _Chrome_.
+
+Veja que temos 2 arquivos de testes. Escolha um arquivo de teste para que o _Cypress_ abra-o e execute-o.
+
+><img src='./img_readme/cypress-tela_executando-testes.png'> <br>
+
+A tela mostrada acima é a tela que abrirá executando todos os testes presentes no arquivo *__login.cy.js__*
 
 ---
 

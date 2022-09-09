@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 function ButtonLogin({ onClick }) {
   return (
-    <button type="button" onClick={ onClick }>
+    <button id="login-button" type="button" onClick={ onClick }>
       Entrar
     </button>
   );

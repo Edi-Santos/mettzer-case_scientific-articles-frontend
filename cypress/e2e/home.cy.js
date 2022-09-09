@@ -39,4 +39,8 @@ describe('Testando Tela Home', () => {
     cy.get(`${MAIN_HOME} h2`).should('exist');
     cy.get(`${MAIN_HOME} h2`).should('have.text', 'ARTIGOS');
   });
+
+  it('8 - testa se no <main /> há uma <section /> com a classe .btn-article-container', () => {
+    cy.get(`${MAIN_HOME} ${SECTION}.btn-article-container`).should('exist');
+  });
 });

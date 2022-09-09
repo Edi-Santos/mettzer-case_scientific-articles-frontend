@@ -12,11 +12,8 @@
    - [Rodando o Projeto](#rodando-o-projeto)
 3. [Como Rodar os Testes em sua Máquina](#como-rodar-os-testes-em-sua-máquina)
    - [Rodando os Testes](#rodando-os-testes)
-4. [Endpoints do Projeto](#endpoints-do-projeto)
-   - [POST /login](#post-login)
-   - [POST /user](#post-user)
-   - [POST /post](#post-post)
-   - [GET /post](#get-post)
+4. [Telas do Projeto](#telas-do-projeto)
+   - [Tela /login](#tela-login)
 5. [Considerações Finais](#considerações-finais)
 
 ---
@@ -117,6 +114,20 @@ Veja que temos 2 arquivos de testes. Escolha um arquivo de teste para que o _Cyp
 ><img src='./img_readme/cypress-tela_executando-testes.png'> <br>
 
 A tela mostrada acima é a tela que abrirá executando todos os testes presentes no arquivo *__login.cy.js__*
+
+---
+
+## Telas do Projeto
+Neste projeto há 2 telas (tela de _login_ e _home_) e uma que não foi desenvolvida (tela de _cadastro_).
+
+#### Tela /login
+Esta tela possui dois _inputs_ sendo um para _email_ e outro para _senha_. Possui também dois botões que redirecionam para outra tela que são o botão __Entrar__ e __Cadastrar__. <br>
+O botão `Entrar` pega o email usado no _login_ e guarda no _Local Storage_ para reutilizar no `<header />` presente na tela seguinte.
+
+Há ainda uma pequena validação que verifica se o email é um email válido e se a senha possui, pelo menos, 6 dígitos.
+
+Tela de Login:
+><img src='./img_readme/tela-login.png'>
 
 ---
 

@@ -3,7 +3,7 @@
 ### Sumário
 
 1. [Sobre o Projeto](#sobre-o-projeto)
-   - [Padrões de Projeto](#padrões-de-projeto)tá s
+   - [Padrões de Projeto](#padrões-de-projeto)
    - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 2. [Como Rodar o Projeto Em Sua Máquina](#como-rodar-o-projeto-em-sua-máquina)
    - [Pré Requisitos](#pré-requisitos)

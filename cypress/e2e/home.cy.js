@@ -11,4 +11,8 @@ describe('Testando Tela Home', () => {
   it('1 - testa se há um <header />', () => {
     cy.get(HEADER).should('exist');
   });
+
+  it('2 - testa se no <header /> há um <img />', () => {
+    cy.get(`${HEADER} img`).should('exist');
+  });
 });

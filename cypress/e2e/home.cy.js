@@ -4,6 +4,7 @@ const URL_HOME = 'http://localhost:3000/home';
 const HEADER = 'header';
 const SECTION = 'section';
 const MAIN_HOME = 'main.main-home';
+const BUTTON = 'button';
 
 describe('Testando Tela Home', () => {
   before(() => {
@@ -42,5 +43,10 @@ describe('Testando Tela Home', () => {
 
   it('8 - testa se no <main /> há uma <section /> com a classe .btn-article-container', () => {
     cy.get(`${MAIN_HOME} ${SECTION}.btn-article-container`).should('exist');
+  });
+
+  it('9 - testa se há botão de paginação para avançar e se é funcional', () => {
+    cy.get(`${BUTTON}#next`).should('exist');
+    cy.get(`${BUTTON}#next`).click();
   });
 });

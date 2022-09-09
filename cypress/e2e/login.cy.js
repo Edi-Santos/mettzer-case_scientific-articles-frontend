@@ -38,4 +38,8 @@ describe('Testando Tela de Login', () => {
     cy.get(`${LABEL} p#password-label`).should('have.text', 'Senha:');
     cy.get(`${INPUT}#password`).type('PotatoChips');
   });
+
+  it('6 - testa se no <form /> há uma <section /> com a classe: .button-container', () => {
+    cy.get(`${SECTION}.button-container`).should('exist');
+  });
 });

@@ -16,6 +16,10 @@ header {
 }
 
 /* Kinship */
+header img {
+  width: 7%;
+}
+
 header h3 {
   color: var(--title-color-form);
 }

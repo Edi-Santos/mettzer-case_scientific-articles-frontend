@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# Projeto Recebido pela Mettzer - Artigos Científiocs - Front-end
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Sumário
 
-## Available Scripts
+1. [Sobre o Projeto](#sobre-o-projeto)
+   - [Padrões de Projeto](#padrões-de-projeto)tá s
+   - [Tecnologias Utilizadas](#tecnologias-utilizadas)
+2. [Como Rodar o Projeto Em Sua Máquina](#como-rodar-o-projeto-em-sua-máquina)
+   - [Pré Requisitos](#pré-requisitos)
+   - [Clonando o Projeto](#clonando-o-projeto)
+   - [Instalando Dependências](#instalando-dependências)
+   - [Rodando o Projeto](#rodando-o-projeto)
+3. [Como Rodar os Testes em sua Máquina](#como-rodar-os-testes-em-sua-máquina)
+   - [Rodando os Testes](#rodando-os-testes)
+4. [Endpoints do Projeto](#endpoints-do-projeto)
+   - [POST /login](#post-login)
+   - [POST /user](#post-user)
+   - [POST /post](#post-post)
+   - [GET /post](#get-post)
+5. [Considerações Finais](#considerações-finais)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Sobre o Projeto
+O Projeto __Artigos Científicos - Front-end__ é uma aplicação que consome a API <a href='https://core.ac.uk/services/api'>CORE</a> buscando _Artigos Científicos_. <br>
+Você pode conferir uma documentação breve <a href='https://core.ac.uk/docs/'>aqui</a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Padrões de Projeto
+Busquei, ao máximo, seguir alguns dos conceitos de *__SOLID__* tentando colocar em prática as ideia de __Single Responsibility Principle__, __Open/Closed Principle__ e __Dependency Inversion Principle__.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Tecnologias Utilizadas
+Para este projeto eu utilizei as seguintes tecnologias:
 
-### `npm test`
+- JavaScript (ES6)
+- ReactJS
+- React Hooks
+- ContextAPI
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Usei também a biblioteca:
 
-### `npm run build`
+- react-router-dom
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para qualidade de código foi usado:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- eslint-config-trybe-frontend
+- stylelint
+- stylelint-config-standard
+- stylelint-order
+- cypress
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Como Rodar o Projeto Em Sua Máquina
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Pré Requisitos
+Primeiro, será necessário que você tenha instalado o Git e o Node (NPM). Caso não tenha e precise de uma força, siga os tutoriais dos links abaixo.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<a href="https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git">Tutorial do Git</a> <br/>
+<a href="https://balta.io/blog/node-npm-instalacao-configuracao-e-primeiros-passos">Tutorial do Node</a> <br/>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Clonando o Projeto
+Com o ambiente preparado, agora é preciso que você clone o projeto para sua máquina. <br/>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Dentro do repositório no GitHub, clique no botão ***`Code`*** (O único botão verde na tela).
+2. Em seguida, copie o link do repositório.
+3. Depois, abra o seu terminal, navegue até a pasta que deseja colocar o projeto e use o comando: 
+```
+git clone git@github.com:Edi-Santos/mettzer-case_scientific-articles-frontend.git
+```
 
-## Learn More
+#### Instalando Dependências
+Com o projeto já clonado, através do seu terminal ainda aberto, entre na pasta raiz do projeto e rode o comando: <br/>
+```
+npm install
+```
+Assim serão instaladas todas as dependências necessárias para que se possa rodar o projeto.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Rodando o Projeto
+Para rodar o projeto use o comando:
+```
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Como Rodar os Testes em sua Máquina
+Para a elaboração dos testes deste projeto foi utilizada a ferramenta *__Cypress__*. Esta é uma poderosa ferramento para criação de _testes automatizados_ tanto _E2E_ quanto testes de componentes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### Rodando os Testes
+Para começar a testar, com seu terminal aberto na raiz do projeto, execute:
+```
+npm run test:cy
+```
+Aguarde um momento! O Cypress será iniciado (paciência... às vezes demora um pouco mesmo :grimacing:).
 
-### Analyzing the Bundle Size
+Após a inicialização do Cypress abrirá a seguinte tela:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+><img src='./img/cypress_tela-inicial.png'> <br>
 
-### Making a Progressive Web App
+## Considerações Finais
+Aqui eu encerro esta documentação. Espero que tenha ficado o mais claro, o mais nítido possível e que não tenha passado nenhuma etapa despercebida por mim.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Muito obrigado por ter conferido este projeto!! <br/>
+Abraços!

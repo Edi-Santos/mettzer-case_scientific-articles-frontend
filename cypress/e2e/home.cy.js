@@ -49,4 +49,9 @@ describe('Testando Tela Home', () => {
     cy.get(`${BUTTON}#next`).should('exist');
     cy.get(`${BUTTON}#next`).click();
   });
+
+  it('10 - testa se há botão de paginação para voltar e se é funcional', () => {
+    cy.get(`${BUTTON}#previous`).should('exist');
+    cy.get(`${BUTTON}#previous`).click();
+  });
 });

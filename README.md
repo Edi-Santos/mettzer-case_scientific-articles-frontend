@@ -87,7 +87,10 @@ npm start
 Para a elaboração dos testes deste projeto foi utilizada a ferramenta *__Cypress__*. Esta é uma poderosa ferramento para criação de _testes automatizados_ tanto _E2E_ quanto testes de componentes.
 
 #### Rodando os Testes
-Para começar a testar, com seu terminal aberto na raiz do projeto, execute:
+Para começar a testar você, com seu terminal aberto na raiz do projeto, execute:
+
+>*__Obs.__*: O teste acessa a URL do localhost. Para poder rodar os testes é necessário que você esta com o projeto rodando como informado na seção: [Rodando o Projeto](#rodando-o-projeto)
+
 ```
 npm run test:cy
 ```

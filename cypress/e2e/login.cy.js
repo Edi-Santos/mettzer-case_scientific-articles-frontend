@@ -3,6 +3,10 @@
 const URL_LOGIN = 'http://localhost:3000/login';
 const MAIN = 'main';
 const FORM = 'form';
+const TITLE_H1 = 'h1';
+const SECTION = 'section';
+const LABEL = 'label';
+const INPUT = `${SECTION}.input-container label input`;
 
 describe('Testando Tela de Login', () => {
   before(() => {

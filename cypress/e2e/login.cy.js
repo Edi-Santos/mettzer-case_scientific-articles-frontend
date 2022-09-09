@@ -48,4 +48,16 @@ describe('Testando Tela de Login', () => {
     cy.get(`${BUTTON}#login-button`).should('have.text', 'Entrar');
     cy.get(`${BUTTON}#register-button`).should('have.text', 'Cadastrar');
   });
+
+  it('8 - testa a validação de email', () => {
+    const stub = cy.stub();
+    cy.on('window:alert', stub);
+
+    cy.get(`${INPUT}#email`).clear();
+    cy.get(`${INPUT}#password`).clear();
+
+    cy.get(`${INPUT}#email`).type('erenemail.com');
+    cy.get(`${BUTTON}#login-button`).click()
+      .then(() => expect(stub.getCall(0)).to.be.calledWith('O Email deve ser um Email válido!!!'));
+  });
 });

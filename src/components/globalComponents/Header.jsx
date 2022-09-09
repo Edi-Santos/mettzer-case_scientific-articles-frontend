@@ -10,7 +10,7 @@ function Header() {
 
   return (
     <header>
-      <img src="" alt="espaço para logo" />
+      <img src="./img/artigo-cientifico_logo.png" alt="espaço para logo" />
 
       <section className="data-user-container">
         <h3>{ `Olá, ${userData} !!!` }</h3>

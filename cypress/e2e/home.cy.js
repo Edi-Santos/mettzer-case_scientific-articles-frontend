@@ -24,4 +24,9 @@ describe('Testando Tela Home', () => {
   it('4 - testa se na <section /> há um <h3 />', () => {
     cy.get(`${SECTION}.data-user-container h3`).should('exist');
   });
+
+  it('5 - testa se na <section /> há um <button /> com o texto: SAIR', () => {
+    cy.get(`${SECTION}.data-user-container button`).should('exist');
+    cy.get(`${SECTION}.data-user-container button`).should('have.text', 'SAIR');
+  });
 });

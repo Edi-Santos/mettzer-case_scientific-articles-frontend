@@ -54,4 +54,9 @@ describe('Testando Tela Home', () => {
     cy.get(`${BUTTON}#previous`).should('exist');
     cy.get(`${BUTTON}#previous`).click();
   });
+
+  it('11 - testa o botão "SAIR"', () => {
+    cy.get(`${SECTION}.data-user-container button`).click();
+    cy.url('http://localhost:3000/login');
+  });
 });

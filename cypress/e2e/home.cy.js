@@ -20,4 +20,8 @@ describe('Testando Tela Home', () => {
   it('3 - testa se no <header /> há uma <section /> com a classe .data-user-container', () => {
     cy.get(`${HEADER} ${SECTION}.data-user-container`).should('exist');
   });
+
+  it('4 - testa se na <section /> há um <h3 />', () => {
+    cy.get(`${SECTION}.data-user-container h3`).should('exist');
+  });
 });

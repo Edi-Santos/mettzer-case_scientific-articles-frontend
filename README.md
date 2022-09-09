@@ -95,7 +95,7 @@ Aguarde um momento! O Cypress será iniciado (paciência... às vezes demora um 
 
 Após a inicialização do Cypress abrirá a seguinte tela:
 
-><img src='./img_readme/cypress_tela-inicial.png'> <br>
+><img src='./public/img_readme/cypress_tela-inicial.png'> <br>
 
 ## Considerações Finais
 Aqui eu encerro esta documentação. Espero que tenha ficado o mais claro, o mais nítido possível e que não tenha passado nenhuma etapa despercebida por mim.

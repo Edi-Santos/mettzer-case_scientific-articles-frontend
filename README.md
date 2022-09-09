@@ -129,6 +129,13 @@ Há ainda uma pequena validação que verifica se o email é um email válido e 
 Tela de Login:
 ><img src='./img_readme/tela-login.png'>
 
+#### Tela /home
+Esta tela possui um `<header />` com uma imagem, uma mensagem de boas vindas puxando o email do usuário armazenado no _Local Storage_ no momento do login e um botão com o texto __SAIR__ que encerra a seção do usuário retornando à página de login. <br>
+Em seguida nós encontramos na tela um título com o texto __ARTIGOS__, dois botões para a paginação dos artigos e, por fim, os artigos recebidos da requisição à API <a href='https://core.ac.uk/services/api'>CORE</a>
+
+Tela Home:
+><img src='./img_readme/tela-home.png'>
+
 ---
 
 ## Considerações Finais

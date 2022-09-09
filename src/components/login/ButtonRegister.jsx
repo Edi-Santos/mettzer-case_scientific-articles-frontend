@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 function ButtonRegister({ onClick }) {
   return (
-    <button type="button" onClick={ onClick }>
+    <button id="register-button" type="button" onClick={ onClick }>
       Cadastrar
     </button>
   );

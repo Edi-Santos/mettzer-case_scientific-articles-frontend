@@ -3,6 +3,7 @@
 const URL_HOME = 'http://localhost:3000/home';
 const HEADER = 'header';
 const SECTION = 'section';
+const MAIN_HOME = 'main.main-home';
 
 describe('Testando Tela Home', () => {
   before(() => {
@@ -28,5 +29,9 @@ describe('Testando Tela Home', () => {
   it('5 - testa se na <section /> há um <button /> com o texto: SAIR', () => {
     cy.get(`${SECTION}.data-user-container button`).should('exist');
     cy.get(`${SECTION}.data-user-container button`).should('have.text', 'SAIR');
+  });
+
+  it('6 - testa se há um <main /> com a classe .main-home', () => {
+    cy.get(MAIN_HOME).should('exist');
   });
 });

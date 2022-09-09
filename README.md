@@ -137,6 +137,9 @@ Em seguida nós encontramos na tela um título com o texto __ARTIGOS__, dois bot
 Tela Home:
 ><img src='./img_readme/tela-home.png'>
 
+#### Tela /register
+Esta tela não foi desenvolvida.
+
 ---
 
 ## Considerações Finais

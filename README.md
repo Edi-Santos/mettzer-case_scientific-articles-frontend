@@ -14,6 +14,7 @@
    - [Rodando os Testes](#rodando-os-testes)
 4. [Telas do Projeto](#telas-do-projeto)
    - [Tela /login](#tela-login)
+   - [Tela /home](#tela-home)
 5. [Considerações Finais](#considerações-finais)
 
 ---

@@ -73,4 +73,15 @@ describe('Testando Tela de Login', () => {
     cy.get(`${BUTTON}#login-button`).click()
       .then(() => expect(stub.getCall(0)).to.be.calledWith('A senha deve conter, no mínimo, 6 dígitos!!!'));
   });
+
+  it('10 - testa se quando passado email e senha corretos, redireciona para tela home', () => {
+    cy.get(`${INPUT}#email`).clear();
+    cy.get(`${INPUT}#password`).clear();
+
+    cy.get(`${INPUT}#email`).type('eren@email.com');
+    cy.get(`${INPUT}#password`).type('123456');
+    cy.get(`${BUTTON}#login-button`).click();
+
+    cy.url('http://localhost:3000/home');
+  });
 });

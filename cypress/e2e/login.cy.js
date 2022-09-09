@@ -60,4 +60,17 @@ describe('Testando Tela de Login', () => {
     cy.get(`${BUTTON}#login-button`).click()
       .then(() => expect(stub.getCall(0)).to.be.calledWith('O Email deve ser um Email válido!!!'));
   });
+
+  it('9 - testa a validação de senha', () => {
+    const stub = cy.stub();
+    cy.on('window:alert', stub);
+
+    cy.get(`${INPUT}#email`).clear();
+    cy.get(`${INPUT}#password`).clear();
+
+    cy.get(`${INPUT}#email`).type('eren@email.com');
+    cy.get(`${INPUT}#password`).type('12345');
+    cy.get(`${BUTTON}#login-button`).click()
+      .then(() => expect(stub.getCall(0)).to.be.calledWith('A senha deve conter, no mínimo, 6 dígitos!!!'));
+  });
 });
